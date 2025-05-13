@@ -9,9 +9,78 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    background: rgba(44, 62, 80, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0 40px;
+    height: 60px;
+    align-items: center;
+}
+.navbar li {
+    margin-left: 30px;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+.navbar a.active, .navbar a:hover {
+    background: #2980b9;
+}
+
+.hero {
+    width: 100%;
+    height: 400px;
+    background: url('../images/hero.jpg') center/cover no-repeat, #34495e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    position: relative;
+}
+.hero-content {
+    background: rgba(255,255,255,0.85);
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    text-align: center;
+}
+.hero h1 {
+    color: #2c3e50;
+    font-size: 2.8em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+}
+.intro {
+    font-size: 1.15em;
+    background: #f5f5f5;
+    padding: 32px 28px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
 }
 
 header {
